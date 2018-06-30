@@ -30,15 +30,23 @@ assign end_cond = add_cond && cnt_r == 10 - 1;
 
 always @(posedge clk or negedge rst_n) begin
     if (rst_n == 0) begin
-        dout_r <= 0;
         en_r <= 0;
     end
     else if (en) begin
         en_r <= 1;
     end
     else if (end_cond) begin
+        en_r <= 0;
+    end
+end
+
+always @(posedge clk or negedge rst_n) begin
+    if (rst_n == 0) begin
         dout_r <= 0;
         en_r <= 0;
+    end
+    else if (end_cond) begin
+        dout_r <= 0;
     end
     else if (en_r) begin
         dout_r <= 1;
