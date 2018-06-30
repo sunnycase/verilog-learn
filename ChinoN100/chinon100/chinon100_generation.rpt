@@ -1,0 +1,113 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate F:\Work\Repository\verilog-learn\ChinoN100\chinon100.qsys --block-symbol-file --output-directory=F:\Work\Repository\verilog-learn\ChinoN100\chinon100 --family="Cyclone IV E" --part=EP4CE6F17C8
+Progress: Loading ChinoN100/chinon100.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 18.0]
+Progress: Parameterizing module clk
+Progress: Adding cpu0 [altera_nios2_gen2 18.0]
+Progress: Parameterizing module cpu0
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.0]
+Progress: Parameterizing module jtag_uart
+Progress: Adding onchip_ram [altera_avalon_onchip_memory2 18.0]
+Progress: Parameterizing module onchip_ram
+Progress: Adding onchip_rom [altera_avalon_onchip_memory2 18.0]
+Progress: Parameterizing module onchip_rom
+Progress: Adding sysid [altera_avalon_sysid_qsys 18.0]
+Progress: Parameterizing module sysid
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: chinon100.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: chinon100.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: chinon100.sysid: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate F:\Work\Repository\verilog-learn\ChinoN100\chinon100.qsys --synthesis=VERILOG --output-directory=F:\Work\Repository\verilog-learn\ChinoN100\chinon100\synthesis --family="Cyclone IV E" --part=EP4CE6F17C8
+Progress: Loading ChinoN100/chinon100.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 18.0]
+Progress: Parameterizing module clk
+Progress: Adding cpu0 [altera_nios2_gen2 18.0]
+Progress: Parameterizing module cpu0
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.0]
+Progress: Parameterizing module jtag_uart
+Progress: Adding onchip_ram [altera_avalon_onchip_memory2 18.0]
+Progress: Parameterizing module onchip_ram
+Progress: Adding onchip_rom [altera_avalon_onchip_memory2 18.0]
+Progress: Parameterizing module onchip_rom
+Progress: Adding sysid [altera_avalon_sysid_qsys 18.0]
+Progress: Parameterizing module sysid
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: chinon100.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: chinon100.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: chinon100.sysid: Time stamp will be automatically updated when this component is generated.
+Info: chinon100: Generating chinon100 "chinon100" for QUARTUS_SYNTH
+Info: cpu0: "chinon100" instantiated altera_nios2_gen2 "cpu0"
+Info: jtag_uart: Starting RTL generation for module 'chinon100_jtag_uart'
+Info: jtag_uart:   Generation command is [exec D:/software/development/quartusprime/18.0/quartus/bin64/perl/bin/perl.exe -I D:/software/development/quartusprime/18.0/quartus/bin64/perl/lib -I D:/software/development/quartusprime/18.0/quartus/sopc_builder/bin/europa -I D:/software/development/quartusprime/18.0/quartus/sopc_builder/bin/perl_lib -I D:/software/development/quartusprime/18.0/quartus/sopc_builder/bin -I D:/software/development/quartusprime/18.0/quartus/../ip/altera/sopc_builder_ip/common -I D:/software/development/quartusprime/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/software/development/quartusprime/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=chinon100_jtag_uart --dir=C:/Users/SUNNYC~1/AppData/Local/Temp/alt7677_6648606920331778317.dir/0002_jtag_uart_gen/ --quartus_dir=D:/software/development/quartusprime/18.0/quartus --verilog --config=C:/Users/SUNNYC~1/AppData/Local/Temp/alt7677_6648606920331778317.dir/0002_jtag_uart_gen//chinon100_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'chinon100_jtag_uart'
+Info: jtag_uart: "chinon100" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: onchip_ram: Starting RTL generation for module 'chinon100_onchip_ram'
+Info: onchip_ram:   Generation command is [exec D:/software/development/quartusprime/18.0/quartus/bin64/perl/bin/perl.exe -I D:/software/development/quartusprime/18.0/quartus/bin64/perl/lib -I D:/software/development/quartusprime/18.0/quartus/sopc_builder/bin/europa -I D:/software/development/quartusprime/18.0/quartus/sopc_builder/bin/perl_lib -I D:/software/development/quartusprime/18.0/quartus/sopc_builder/bin -I D:/software/development/quartusprime/18.0/quartus/../ip/altera/sopc_builder_ip/common -I D:/software/development/quartusprime/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/software/development/quartusprime/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=chinon100_onchip_ram --dir=C:/Users/SUNNYC~1/AppData/Local/Temp/alt7677_6648606920331778317.dir/0003_onchip_ram_gen/ --quartus_dir=D:/software/development/quartusprime/18.0/quartus --verilog --config=C:/Users/SUNNYC~1/AppData/Local/Temp/alt7677_6648606920331778317.dir/0003_onchip_ram_gen//chinon100_onchip_ram_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_ram: Done RTL generation for module 'chinon100_onchip_ram'
+Info: onchip_ram: "chinon100" instantiated altera_avalon_onchip_memory2 "onchip_ram"
+Info: onchip_rom: Starting RTL generation for module 'chinon100_onchip_rom'
+Info: onchip_rom:   Generation command is [exec D:/software/development/quartusprime/18.0/quartus/bin64/perl/bin/perl.exe -I D:/software/development/quartusprime/18.0/quartus/bin64/perl/lib -I D:/software/development/quartusprime/18.0/quartus/sopc_builder/bin/europa -I D:/software/development/quartusprime/18.0/quartus/sopc_builder/bin/perl_lib -I D:/software/development/quartusprime/18.0/quartus/sopc_builder/bin -I D:/software/development/quartusprime/18.0/quartus/../ip/altera/sopc_builder_ip/common -I D:/software/development/quartusprime/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/software/development/quartusprime/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=chinon100_onchip_rom --dir=C:/Users/SUNNYC~1/AppData/Local/Temp/alt7677_6648606920331778317.dir/0004_onchip_rom_gen/ --quartus_dir=D:/software/development/quartusprime/18.0/quartus --verilog --config=C:/Users/SUNNYC~1/AppData/Local/Temp/alt7677_6648606920331778317.dir/0004_onchip_rom_gen//chinon100_onchip_rom_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_rom: Done RTL generation for module 'chinon100_onchip_rom'
+Info: onchip_rom: "chinon100" instantiated altera_avalon_onchip_memory2 "onchip_rom"
+Info: sysid: "chinon100" instantiated altera_avalon_sysid_qsys "sysid"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "chinon100" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "chinon100" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "chinon100" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'chinon100_cpu0_cpu'
+Info: cpu:   Generation command is [exec D:/Software/Development/QuartusPrime/18.0/quartus/bin64//eperlcmd.exe -I D:/Software/Development/QuartusPrime/18.0/quartus/bin64//perl/lib -I D:/software/development/quartusprime/18.0/quartus/sopc_builder/bin/europa -I D:/software/development/quartusprime/18.0/quartus/sopc_builder/bin/perl_lib -I D:/software/development/quartusprime/18.0/quartus/sopc_builder/bin -I D:/software/development/quartusprime/18.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/software/development/quartusprime/18.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/software/development/quartusprime/18.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/software/development/quartusprime/18.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/software/development/quartusprime/18.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=chinon100_cpu0_cpu --dir=C:/Users/SUNNYC~1/AppData/Local/Temp/alt7677_6648606920331778317.dir/0008_cpu_gen/ --quartus_bindir=D:/Software/Development/QuartusPrime/18.0/quartus/bin64/ --verilog --config=C:/Users/SUNNYC~1/AppData/Local/Temp/alt7677_6648606920331778317.dir/0008_cpu_gen//chinon100_cpu0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2018.05.26 08:48:52 (*) Starting Nios II generation
+Info: cpu: # 2018.05.26 08:48:52 (*)   Checking for plaintext license.
+Info: cpu: # 2018.05.26 08:48:52 (*)   Couldn't query license setup in Quartus directory D:/Software/Development/QuartusPrime/18.0/quartus/bin64/
+Info: cpu: # 2018.05.26 08:48:52 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2018.05.26 08:48:52 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2018.05.26 08:48:52 (*)   Plaintext license not found.
+Info: cpu: # 2018.05.26 08:48:52 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2018.05.26 08:48:52 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2018.05.26 08:48:52 (*)   Creating all objects for CPU
+Info: cpu: # 2018.05.26 08:48:54 (*)   Generating RTL from CPU objects
+Info: cpu: # 2018.05.26 08:48:54 (*)   Creating plain-text RTL
+Info: cpu: # 2018.05.26 08:48:55 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'chinon100_cpu0_cpu'
+Info: cpu: "cpu0" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu0_data_master_translator"
+Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: cpu0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu0_data_master_agent"
+Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file F:/Work/Repository/verilog-learn/ChinoN100/chinon100/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file F:/Work/Repository/verilog-learn/ChinoN100/chinon100/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file F:/Work/Repository/verilog-learn/ChinoN100/chinon100/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: chinon100: Done "chinon100" with 29 modules, 43 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

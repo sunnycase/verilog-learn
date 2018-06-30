@@ -1,0 +1,13 @@
+bin
+obj
+*.out
+*.vcd
+.qsys_edit
+db
+incremental_db
+synthesis
+output_files
+.metadata
+*.bak
+*.elf
+*.a
